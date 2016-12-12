@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module("myApp", ["ngRoute", "dndLists"])
+angular.module("myApp", ["ngRoute", "dndLists", "ui.bootstrap"])
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {

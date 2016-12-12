@@ -1,14 +1,28 @@
+
 <h1>Demo</h1>
 <div class="container-fluid"></div>
 <div class="row">
     <div class="container">
-        <input type="checkbox" name="Box1" value="Box1" ng-model="0" checked> Box 1
-        <input type="checkbox" name="Box1" value="Box2" ng-model="1"> Box 2
-        <input type="checkbox" name="Box1" value="Box3" ng-model="2"> Box 3
-        <input type="checkbox" name="Box1" value="Box4" ng-model="3"> Box 4
-        <input type="checkbox" name="Box1" value="Box5" ng-model="4"> Box 5
+        <input type="checkbox" name="Box1" value="Box1" ng-model="test"> Box 1
+        <input type="checkbox" name="Box2" value="Box2" ng-value="box3"> Box 2
+        <input type="checkbox" name="Box3" value="Box3" ng-value="box4"> Box 3
+        <input type="checkbox" name="Box4" value="Box4" ng-value="box5"> Box 4
+        <input type="checkbox" name="Box5" value="Box5" ng-value="box6"> Box 5
+    </div>
+    <div class="btn-group" uib-dropdown>
+        <button type="button" class="btn btn-primary" uib-dropdown-toggle>
+            Dropdown on Body <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <input type="checkbox" name="Box1" value="Box1" ng-model="test"> Box 1
+            <input type="checkbox" name="Box2" value="Box2" ng-value="box3"> Box 2
+            <input type="checkbox" name="Box3" value="Box3" ng-value="box4"> Box 3
+            <input type="checkbox" name="Box4" value="Box4" ng-value="box5"> Box 4
+            <input type="checkbox" name="Box5" value="Box5" ng-value="box6"> Box 5
+        </ul>
     </div>
 </div>
+
 <div class="advancedDemo row">
     <div ng-repeat="containers in model" class="container">
         <div class="dropzone box" ng-include="'advanced.html'"></div>
