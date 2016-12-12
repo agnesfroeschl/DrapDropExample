@@ -1,0 +1,19 @@
+<h1>Demo</h1>
+<div class="container-fluid"></div>
+<div class="row">
+    <div class="container">
+        <input type="checkbox" name="Box1" value="Box1" ng-model="0" checked> Box 1
+        <input type="checkbox" name="Box1" value="Box2" ng-model="1"> Box 2
+        <input type="checkbox" name="Box1" value="Box3" ng-model="2"> Box 3
+        <input type="checkbox" name="Box1" value="Box4" ng-model="3"> Box 4
+        <input type="checkbox" name="Box1" value="Box5" ng-model="4"> Box 5
+    </div>
+</div>
+<div class="advancedDemo row">
+    <div ng-repeat="containers in model" class="container">
+        <div class="dropzone box" ng-include="'advanced.html'"></div>
+    </div>
+</div>
+
+<div view-source="advanced"></div>
+
